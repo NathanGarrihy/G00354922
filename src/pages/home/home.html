@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Clare App
+    </ion-title>    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <h1>County Clare Information App</h1>
+  <ion-list>
+   <!-- <ion-item>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/53d02n9d38/doolin/" data-label_1="DOOLIN" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >DOOLIN WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+  </ion-item>-->
+    <ion-item>
+    <ion-thumbnail item-start>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmEvqGgtCChuKKPxpu0dj4M-pPoatAVhrxNVah8bQaEsX2dZ_GBQ">
+    </ion-thumbnail>
+    <h2>The Cliffs Of Moher</h2>
+    <p>The Cliffs of Moher are sea cliffs located at the southwestern edge of the Burren region in County Clare, Ireland. They run for about 14 kilometres.</p>
+    <button ion-button item-end (click)="openCliffs()">View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzH0wgCwBIrzKa3WwJIrerTvQ5Ar9ZFzfZj5dAgFAJuqv2ZHn_Pg">
+      </ion-thumbnail>
+      <h2>Doolin</h2>
+      <p>Doolin is a village on Ireland’s west coast. It’s known as a gateway to the ancient sites on the Aran Islands, which are just offshore.</p>
+      <button ion-button item-end (click)="openDoolin()">View</button>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+        <img src="../assets/imgs/lahinch.jpg">
+        </ion-thumbnail>
+        <h2>Lahinch</h2>
+        <p>Lahinch or Lehinch is a small town on Liscannor Bay, on the northwest coast of County Clare,</p>
+        <button ion-button item-end (click)="openLahinch()">View</button>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+          <img src="../assets/imgs/ailweecave.jpg">
+          </ion-thumbnail>
+          <h2>Aillwee Cave</h2>
+          <p>Aillwee Cave is a cave system in the karst landscape of the Burren in County Clare, Ireland. The name Aillwee is derived from the Irish Aill Bhuí which means "yellow cliff".</p>
+          <button ion-button item-end (click)="openAilweeCave()">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/burren.jpg">
+            </ion-thumbnail>
+            <h2>The Burren</h2>
+            <p>The burren is a karst landscape of bedrock incorporating a vast cracked pavement of glacial-era limestone, with cliffs and caves, fossils, rock formations and archaeological sites. </p>
+            <button ion-button item-end (click)="openBurren()">View</button>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/clareFlag.jpg">
+              </ion-thumbnail>
+              <h2>Tourist Movies</h2>
+              <p>The finest selection tourist movies to watch. </p>
+              <button ion-button item-end (click)="openMovie()">View</button>
+              </ion-item>
+              <ion-item>
+                <ion-thumbnail item-start>
+                <img src="../assets/imgs/weatherImage.jpg">
+                </ion-thumbnail>
+                <h2>Current Weather Conditions</h2>
+                <p>Check the current weather in county clare </p>
+                <button ion-button item-end (click)="openWeather()">View</button>
+                </ion-item>
+                <button ion-button (click)="viewRating()">Feedback</button>
+    </ion-list>
+</ion-content>

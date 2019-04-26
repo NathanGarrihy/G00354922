@@ -1,0 +1,22 @@
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Rating</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="openHome()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="about">
+    <h2>You're rating: {{rate}}/10</h2>
+    <button (click)="openStatusPage()" ion-button large>Change your rating</button>
+
+</ion-content>
