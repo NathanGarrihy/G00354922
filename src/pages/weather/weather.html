@@ -1,9 +1,3 @@
-<!--
-  Generated template for the WeatherPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar>
     <ion-title>weather</ion-title>
@@ -11,6 +5,7 @@
 </ion-header>
 
 <ion-content padding class="style">
+  <!-- Weather API printing-->
   <ion-item>
     <h1>Weather for {{townName}}, County {{countyName}}, {{countryName}}</h1>
     <h2>{{localTime}}</h2>
@@ -23,5 +18,13 @@
     <ion-thumbnail>
     <img height='200' width='150' src="{{conditionImage}}">
   </ion-thumbnail>
+  <br>
+  <!-- 7 day weather forecast -->
+  <ion-item>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/53d02n9d38/doolin/" data-label_1="DOOLIN" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >7 Day Forecast</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+</ion-item>
 </ion-item>
 </ion-content>

@@ -2,13 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
-/**
- * Generated class for the FinalratingPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-finalrating',
@@ -28,7 +21,6 @@ export class FinalratingPage {
   openFeedback() {
     this.navCtrl.push('StatusPage');
   }
-
 
   ionViewWillEnter(){
     this.storage.get("status").then((val)=>{

@@ -10,7 +10,7 @@ export class WeatherProvider {
   }
 
   getDoolinWeather():Observable<any>{
-    //  Link for api which points to co-ordanites of Cliffs of Moher (most popular tourist destination of County Clare)
+    //  Link for api which points to co-ordanites of Doolin (popular/focal tourist destination of County Clare)
     return this.http.get('http://api.apixu.com/v1/current.json?key=3a1385634ea148c0b5b175621192204&q=Doolin');
   }
 }
